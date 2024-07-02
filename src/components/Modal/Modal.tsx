@@ -41,7 +41,7 @@ function Modal({
   useEffect(() => {
     setIsOpen(true);
     setTimeout(() => {
-      setIsOpen(true);
+      setIsOpen(false);
     }, delay);
   }, [delay]);
   return isOpen ? (
