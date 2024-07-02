@@ -14,4 +14,5 @@ export interface ModalProps {
   height: number | string;
   position: 'topleft' | 'topright' | 'center' | 'bottomleft' | 'bottomright';
   delay: number;
+  buttonPosition: 'upleft' | 'upright' | 'center' | 'downleft' | 'downright';
 }

@@ -17,6 +17,7 @@ function Modal({
   height,
   position,
   delay,
+  buttonPosition,
 }: ModalProps): ReactElement {
   const cx = classNames.bind(styles);
   const positionClassnames = cx([position], {
@@ -26,6 +27,13 @@ function Modal({
     bottomleft: position === 'bottomleft',
     bottomright: position === 'bottomright',
     center: position === 'center',
+  });
+  const closeClassnames = cx([buttonPosition], {
+    close: true,
+    upleft: buttonPosition === 'upleft',
+    upright: buttonPosition === 'upright',
+    downleft: buttonPosition === 'downleft',
+    downright: buttonPosition === 'downright',
   });
 
   const [isOpen, setIsOpen] = useState(false);
@@ -41,6 +49,14 @@ function Modal({
       className={positionClassnames}
       style={{ maxHeight: height, maxWidth: width }}
     >
+      <div className={closeClassnames} onClick={() => setIsOpen(false)}>
+        <XCircle
+          color="#fff"
+          weight="fill"
+          size={32}
+          className={styles['icon-close']}
+        />
+      </div>
       <div>
         {type === 'success' && (
           <CheckCircle
