@@ -1,6 +1,6 @@
 {
-  "name": "@k_ben/k-reactmodal2",
-  "version": "1.0.0",
+  "name": "@k_ben/k-reactmodal",
+  "version": "1.0.1",
   "description": "",
   "main": "./dist/index.js",
   "type": "module",
