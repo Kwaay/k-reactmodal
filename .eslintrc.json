@@ -63,33 +63,3 @@
     "import/export": "error"
   }
 }
-/*
-
-
-{
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    
-  },
-  // "overrides": [
-  //   {
-  //     "files": "*.ts",
-  //     "parser": "@typescript-eslint/parser",
-  //     "plugins": ["@typescript-eslint"],
-  //     "parserOptions": {
-  //       "project": "tsconfig.json"
-  //     },
-  //     "extends": [
-  //       "plugin:@typescript-eslint/recommended",
-  //       "plugin:@typescript-eslint/eslint-recommended",
-  //       "plugin:@typescript-eslint/recommended-requiring-type-checking"
-  //     ]
-  //   }
-  // ],
-  "plugins": ["react", "import", "prettier", "jsx-a11y", "@typescript-eslint"],
-}
-
-
-
-*/
