@@ -23,6 +23,7 @@ export const Success: Story = {
     width: '300px',
     position: 'center',
     delay: 5000,
+    buttonPosition: 'upright',
   },
 };
 export const Error: Story = {
@@ -34,6 +35,7 @@ export const Error: Story = {
     width: '300px',
     position: 'center',
     delay: 5000,
+    buttonPosition: 'upright',
   },
 };
 export const Info: Story = {
@@ -45,6 +47,7 @@ export const Info: Story = {
     width: '300px',
     position: 'center',
     delay: 5000,
+    buttonPosition: 'upright',
   },
 };
 export const Warning: Story = {
@@ -56,6 +59,7 @@ export const Warning: Story = {
     width: '300px',
     position: 'center',
     delay: 5000,
+    buttonPosition: 'upright',
   },
 };
 export const Loading: Story = {
@@ -67,6 +71,7 @@ export const Loading: Story = {
     width: '300px',
     position: 'center',
     delay: 5000,
+    buttonPosition: 'upright',
   },
 };
 export const Launch: Story = {
@@ -78,6 +83,7 @@ export const Launch: Story = {
     width: '300px',
     position: 'center',
     delay: 5000,
+    buttonPosition: 'upright',
   },
 };
 export const Wait: Story = {
@@ -89,6 +95,7 @@ export const Wait: Story = {
     width: '300px',
     position: 'center',
     delay: 5000,
+    buttonPosition: 'upright',
   },
 };
 export const End: Story = {
@@ -100,5 +107,6 @@ export const End: Story = {
     width: '300px',
     position: 'center',
     delay: 5000,
+    buttonPosition: 'upright',
   },
 };

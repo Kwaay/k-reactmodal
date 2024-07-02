@@ -32,6 +32,26 @@
   right: 0;
 }
 
+.upleft {
+  top: 5px;
+  left: 5px;
+}
+
+.upright {
+  top: 5px;
+  right: -5px;
+}
+
+.bottomleft {
+  bottom: 0;
+  left: 10px;
+}
+
+.bottomright {
+  bottom: 0;
+  right: -5px;
+}
+
 .center {
   top: 50%;
   left: 50%;
@@ -40,6 +60,12 @@
 
 .icon-type {
   margin: 1em;
+}
+
+.icon-close {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
 }
 
 .icon-special {
@@ -86,11 +112,6 @@
   }
 }
 
-.progress-bar-container {
-  background-color: #a6a6a6;
-}
-
-.progress-bar {
-  height: 24px;
-  width: 0%;
+.close {
+  position: absolute;
 }
