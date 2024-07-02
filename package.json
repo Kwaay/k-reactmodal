@@ -1,14 +1,16 @@
 {
   "name": "@k_ben/k-reactmodal",
-  "version": "0.0.1",
+  "version": "0.0.7",
   "description": "",
-  "main": "dist/index.js",
+  "main": "./dist/index.js",
   "type": "module",
   "files": [
     "dist"
   ],
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "exports": {
+    "types": "./dist/types/index.d.ts",
+    "default": "./dist/index.js"
+  },
   "watch": {
     "compile": {
       "patterns": [
@@ -21,7 +23,7 @@
   "scripts": {
     "test": "jest",
     "test:coverage": "node --experimental-vm-modules ./node_modules/.bin/jest --coverage --forceExit",
-    "lint": "./node_modules/.bin/eslint --ext .tsx .",
+    "lint": "eslint --ext .tsx .",
     "rollup": "rollup -c --bundleConfigAsCjs",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
@@ -32,7 +34,7 @@
     "compile": "npm run build"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.24.4",
     "@babel/preset-env": "^7.24.4",
