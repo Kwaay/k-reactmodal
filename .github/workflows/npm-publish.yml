@@ -28,6 +28,9 @@ jobs:
       - name: Run all linters (ESLint, Stylelint)
         run: npm run lint
 
+      - name: Build
+        run: npm run build
+
       - name: Build Storybook Documentation
         run: npm run build-storybook
 
@@ -38,6 +41,6 @@ jobs:
           publish_dir: storybook-static
 
       - name: Deploy to NPM
-        run: npm publish --access=public
+        run: npm publish --declaration --access=public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
