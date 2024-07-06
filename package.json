@@ -1,7 +1,7 @@
 {
   "name": "@k_ben/k-reactmodal",
-  "version": "1.0.2",
-  "description": "",
+  "version": "1.0.3",
+  "description": "A modular react modal.",
   "main": "./dist/index.js",
   "type": "module",
   "files": [
@@ -10,6 +10,14 @@
   "exports": {
     "types": "./dist/types/index.d.ts",
     "default": "./dist/index.js"
+  },
+  "homepage": "https://kwaay.github.io/k-reactmodal/",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Kwaay/k-reactmodal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kwaay/k-reactmodal/issues"
   },
   "watch": {
     "compile": {
@@ -93,5 +101,9 @@
     "@phosphor-icons/react": "^2.1.4",
     "classnames": "^2.5.1",
     "npm-watch": "^0.12.0"
+  },
+  "engines": {
+    "node": ">20",
+    "npm": ">10"
   }
 }
